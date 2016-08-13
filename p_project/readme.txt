@@ -1,17 +1,17 @@
-ÊµÑéÆ÷²Ä:
-	Ì½Ë÷ÕßSTM32F4¿ª·¢°å
+å®žéªŒå™¨æ:
+	æŽ¢ç´¢è€…STM32F4å¼€å‘æ¿
 	
-ÊµÑéÄ¿µÄ:
-	Ñ§Ï°ATK-HC05À¶ÑÀ´®¿ÚÄ£¿éµÄÊ¹ÓÃ£¬ÊµÏÖÀ¶ÑÀ´®¿ÚÍ¨ÐÅ
+å®žéªŒç›®çš„:
+	å­¦ä¹ ATK-HC05è“ç‰™ä¸²å£æ¨¡å—çš„ä½¿ç”¨ï¼Œå®žçŽ°è“ç‰™ä¸²å£é€šä¿¡
 	
-Ó²¼þ×ÊÔ´:
-	1,DS0(Á¬½ÓÔÚPF9),DS1(Á¬½ÓÔÚPF10)
-	2,´®¿Ú1(²¨ÌØÂÊ:115200,PA9/PA10Á¬½ÓÔÚ°åÔØUSB×ª´®¿ÚÐ¾Æ¬CH340ÉÏÃæ)
-	3,ALIENTEK 2.8/3.5/4.3/7´çTFTLCDÄ£¿é(Í¨¹ýFSMCÇý¶¯,FSMC_NE4½ÓLCDÆ¬Ñ¡/A6½ÓRS) 
-	4,°´¼üKEY0(PE4),KEY_UP(PA0,Ò²³ÆÖ®ÎªWK_UP)
-	5,´®¿Ú3(²¨ÌØÂÊ:9600,PB10/PB11Á¬½ÓATK-HC05À¶ÑÀÄ£¿é)
-	6,ATK MODULE½Ó¿Ú&ATK-HC05À¶ÑÀÄ£¿é(Ä£¿éÖ±½Ó²åATK MODULE½Ó¿Ú¼´¿É),Á¬½Ó¹ØÏµÈçÏÂ: 
-	STM32¿ª·¢°å-->ATK-HC05À¶ÑÀÄ£¿é
+ç¡¬ä»¶èµ„æº:
+	1,DS0(è¿žæŽ¥åœ¨PF9),DS1(è¿žæŽ¥åœ¨PF10)
+	2,ä¸²å£1(æ³¢ç‰¹çŽ‡:115200,PA9/PA10è¿žæŽ¥åœ¨æ¿è½½USBè½¬ä¸²å£èŠ¯ç‰‡CH340ä¸Šé¢)
+	3,ALIENTEK 2.8/3.5/4.3/7å¯¸TFTLCDæ¨¡å—(é€šè¿‡FSMCé©±åŠ¨,FSMC_NE4æŽ¥LCDç‰‡é€‰/A6æŽ¥RS) 
+	4,æŒ‰é”®KEY0(PE4),KEY_UP(PA0,ä¹Ÿç§°ä¹‹ä¸ºWK_UP)
+	5,ä¸²å£3(æ³¢ç‰¹çŽ‡:9600,PB10/PB11è¿žæŽ¥ATK-HC05è“ç‰™æ¨¡å—)
+	6,ATK MODULEæŽ¥å£&ATK-HC05è“ç‰™æ¨¡å—(æ¨¡å—ç›´æŽ¥æ’ATK MODULEæŽ¥å£å³å¯),è¿žæŽ¥å…³ç³»å¦‚ä¸‹: 
+	STM32å¼€å‘æ¿-->ATK-HC05è“ç‰™æ¨¡å—
 		   PB10-->RXD
 		   PB11-->TXD
 			PF6-->KEY
@@ -19,30 +19,21 @@
 			GND-->GND
 		5V/3.3V-->VCC 
 
-ÊµÑéÏÖÏó:
-	1,Í¨¹ýSTM32F4µÄUSART3Á¬½ÓATK-HC05À¶ÑÀÄ£¿é,¼ì²â²¢ÏÔÊ¾À¶ÑÀÄ£¿éµÄ×´Ì¬.
-	2,Í¨¹ýKEY0°´¼ü¿ÉÒÔ¿ªÆô/¹Ø±Õ¶¨Ê±ÏòATK-HC05À¶ÑÀÄ£¿é·¢ËÍÊý¾Ý(ALIENTEK HC05 xx)²âÊÔÀ¶ÑÀÄ£¿éµÄÊý¾Ý·¢ËÍ.
-	3,¿ÉÒÔÍ¨¹ýKEY_UP°´¼üÉèÖÃATK-HC05À¶ÑÀÄ£¿éµÄÖ÷´Ó¹¤×÷Ä£Ê½.
-	4,¿ÉÒÔÍ¨¹ýLCDÏÔÊ¾ATK-HC05À¶ÑÀÄ£¿é½ÓÊÕµ½µÄÊý¾Ý.
-	5,¿ÉÒÔÍ¨¹ýUSMART¶ÔATK-HC05À¶ÑÀÄ£¿é½øÐÐATÖ¸Áî²éÑ¯ºÍÉèÖÃ.
-	6,½áºÏÊÖ»ú¶ËÀ¶ÑÀÈí¼þ(À¶ÑÀ´®¿ÚÖúÊÖ v1.97.apk),¿ÉÒÔÊµÏÖÊÖ»úÎÞÏß¿ØÖÆ¿ª·¢°å(µãÁÁºÍ¹Ø±ÕLED1). 
+å®žéªŒçŽ°è±¡:
+	1,é€šè¿‡STM32F4çš„USART3è¿žæŽ¥ATK-HC05è“ç‰™æ¨¡å—,æ£€æµ‹å¹¶æ˜¾ç¤ºè“ç‰™æ¨¡å—çš„çŠ¶æ€.
+	2,é€šè¿‡KEY0æŒ‰é”®å¯ä»¥å¼€å¯/å…³é—­å®šæ—¶å‘ATK-HC05è“ç‰™æ¨¡å—å‘é€æ•°æ®(ALIENTEK HC05 xx)æµ‹è¯•è“ç‰™æ¨¡å—çš„æ•°æ®å‘é€.
+	3,å¯ä»¥é€šè¿‡KEY_UPæŒ‰é”®è®¾ç½®ATK-HC05è“ç‰™æ¨¡å—çš„ä¸»ä»Žå·¥ä½œæ¨¡å¼.
+	4,å¯ä»¥é€šè¿‡LCDæ˜¾ç¤ºATK-HC05è“ç‰™æ¨¡å—æŽ¥æ”¶åˆ°çš„æ•°æ®.
+	5,å¯ä»¥é€šè¿‡USMARTå¯¹ATK-HC05è“ç‰™æ¨¡å—è¿›è¡ŒATæŒ‡ä»¤æŸ¥è¯¢å’Œè®¾ç½®.
+	6,ç»“åˆæ‰‹æœºç«¯è“ç‰™è½¯ä»¶(è“ç‰™ä¸²å£åŠ©æ‰‹ v1.97.apk),å¯ä»¥å®žçŽ°æ‰‹æœºæ— çº¿æŽ§åˆ¶å¼€å‘æ¿(ç‚¹äº®å’Œå…³é—­LED1). 
 
-×¢ÒâÊÂÏî:
-	1,4.3´çºÍ7´çÆÁÐèÒª±È½Ï´óµçÁ÷,USB¹©µç¿ÉÄÜ²»×ã,ÇëÓÃÍâ²¿µçÔ´ÊÊÅäÆ÷(ÍÆ¼öÍâ½Ó12V 1AµçÔ´).
-	2,±¾Àý³ÌÔÚLCD_Initº¯ÊýÀïÃæ(ÔÚILI93xx.c),ÓÃµ½ÁËprintf,Èç¹û²»³õÊ¼»¯´®¿Ú1,½«µ¼ÖÂÒº¾§ÎÞ·¨ÏÔÊ¾!!  
-	3,±¾Àý³Ì²»Ö§³ÖALIENTEK CPLD·½°¸µÄ7´çµçÈÝ´¥ÃþÆÁ£¨V1°æ±¾£©µÄ²âÊÔ!!
-	4,ÇëÈ·±£ATK-HC05À¶ÑÀÄ£¿éµÄÍ¨ÐÅ²¨ÌØÂÊÎª9600.
-	5,×îºÃÓÐ2¸öATK-HC05À¶ÑÀ´®¿ÚÄ£¿é,Ò»Ö÷Ò»´Ó,·½±ã²âÊÔ.·ñÔò¾ÍµÃÍ¨¹ýÆäËûÉè±¸(±ØÐëÓÐÀ¶ÑÀ)Í¬ATK-HC05À¶ÑÀÄ£¿é½øÐÐ¶Ô½Ó²âÊÔ.
-	6,Îñ±Ø¶Ì½ÓÌ½Ë÷ÕßSTM32F4¿ª·¢°åP10µÄUSART3_RXºÍGBC_TXÒÔ¼°USART3_TXºÍGBC_RX
-	7,±¾Àý³ÌÏêÏ¸ËµÃ÷£¬¼û¹âÅÌ£º9£¬ÔöÖµ×ÊÁÏ\1£¬ALIENTEK ²úÆ·×ÊÁÏ\1£¬ATK-HC05À¶ÑÀ´®¿ÚÄ£¿é\ATK-HC05À¶ÑÀ´®¿ÚÄ£¿éÊ¹ÓÃËµÃ÷(F4°æ)_AN1408A.pdf
+æ³¨æ„äº‹é¡¹:
+	1,4.3å¯¸å’Œ7å¯¸å±éœ€è¦æ¯”è¾ƒå¤§ç”µæµ,USBä¾›ç”µå¯èƒ½ä¸è¶³,è¯·ç”¨å¤–éƒ¨ç”µæºé€‚é…å™¨(æŽ¨èå¤–æŽ¥12V 1Aç”µæº).
+	2,æœ¬ä¾‹ç¨‹åœ¨LCD_Initå‡½æ•°é‡Œé¢(åœ¨ILI93xx.c),ç”¨åˆ°äº†printf,å¦‚æžœä¸åˆå§‹åŒ–ä¸²å£1,å°†å¯¼è‡´æ¶²æ™¶æ— æ³•æ˜¾ç¤º!!  
+	3,æœ¬ä¾‹ç¨‹ä¸æ”¯æŒALIENTEK CPLDæ–¹æ¡ˆçš„7å¯¸ç”µå®¹è§¦æ‘¸å±ï¼ˆV1ç‰ˆæœ¬ï¼‰çš„æµ‹è¯•!!
+	4,è¯·ç¡®ä¿ATK-HC05è“ç‰™æ¨¡å—çš„é€šä¿¡æ³¢ç‰¹çŽ‡ä¸º9600.
+	5,æœ€å¥½æœ‰2ä¸ªATK-HC05è“ç‰™ä¸²å£æ¨¡å—,ä¸€ä¸»ä¸€ä»Ž,æ–¹ä¾¿æµ‹è¯•.å¦åˆ™å°±å¾—é€šè¿‡å…¶ä»–è®¾å¤‡(å¿…é¡»æœ‰è“ç‰™)åŒATK-HC05è“ç‰™æ¨¡å—è¿›è¡Œå¯¹æŽ¥æµ‹è¯•.
+	6,åŠ¡å¿…çŸ­æŽ¥æŽ¢ç´¢è€…STM32F4å¼€å‘æ¿P10çš„USART3_RXå’ŒGBC_TXä»¥åŠUSART3_TXå’ŒGBC_RX
+	7,æœ¬ä¾‹ç¨‹è¯¦ç»†è¯´æ˜Žï¼Œè§å…‰ç›˜ï¼š9ï¼Œå¢žå€¼èµ„æ–™\1ï¼ŒALIENTEK äº§å“èµ„æ–™\1ï¼ŒATK-HC05è“ç‰™ä¸²å£æ¨¡å—\ATK-HC05è“ç‰™ä¸²å£æ¨¡å—ä½¿ç”¨è¯´æ˜Ž(F4ç‰ˆ)_AN1408A.pdf
 
 
-		ÕýµãÔ­×Ó@ALIENTEK
-		2014-10-25
-		¹ãÖÝÊÐÐÇÒíµç×Ó¿Æ¼¼ÓÐÏÞ¹«Ë¾
-		µç»°£º020-38271790
-		´«Õæ£º020-36773971
-		¹ºÂò£ºhttp://shop62103354.taobao.com
-		http://shop62057469.taobao.com
-		¹«Ë¾ÍøÕ¾£ºwww.alientek.com
-		¼¼ÊõÂÛÌ³£ºwww.openedv.com
